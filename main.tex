@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\newcommand{\icol}[1]{% inline column vector
+  \left(\begin{smallmatrix}#1\end{smallmatrix}\right)%
+}
+
+
+\title{SP1 Oral Questions}
+\author{Simon Hellmayr}
+\date{February 2016}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is a list of questions adapted from FET's DSV-Ausarbeitung-muendliche-pruefung.pdf from German to English. If questions arise, you found something that doesn't make sense, or have additional questions to add, feel free to fork this at http://www.github.com/shellmayr or contact me at simon.hellmayr[at]gmail.com
+\section{Questions}
+\begin{enumerate}
+    \item What is Bezout's theorem? Explain using an equalizing problem, i.e. under-/over-determined system of equations $\Rightarrow$ solve using least squares.
+    \item Bezout's theorem with regard to equalizers, an example of an equalizer, how can it be designed?
+    \item How to construct an allpass from a transfer function $H(jw)$?
+    \item What does an allpass look like in the time-variant case, how to check whether a given system is an allpass?
+    \item Prove the allpass-property in state-space.
+    \item Split up a system into an allpass and a minimal phase system.
+    \item Explain general properties of allpasses using an example system $$ y_k = x_k \cdot q^{-3} $$
+    \item Explain the Circle of Apollonius
+    \item State-space description: Explain equations, matrices and show why it is being used (advantages/disadvantages). What changes when the system is time-variant? Discuss stability for both time-variant and time-invariant cases. 
+    \item Payley-Wiener Theorem incl. example problem
+    \item Linear phase filters
+    \item Sampling: derivation, relation to least squares approximation, is sampling a linear transformation?
+    \item Sampling theorem with derivation, interpolation function (lowpass, highpass), equidistance, linear operation?, relation to least squares approximation
+    \item What is robustness? How is it defined? Small gain theorem as opposed to LTI stability criteria
+    \item What is a linear vector space?
+    \item Define: subspace, orthogonal subspace, orthogonal complement, relation to least squares
+    \item Define: dimension, basis. Example problem in $GF(2)^3$, apply definitions to see if it is a linear vector space. Explain difference between normed vector and normed vector space.
+    \item System of equations with 2 equations and 3 unknowns (2x3 matrix A, 3x1 vector x, 2x1 vector b) and its solution $x=\icol{-1\\0\\1}+t\cdot \icol{1\\1\\1}$. What are the respective column-space, row-space, null-space? How are these spaces related?
+    \item Galois field $GF(2)^3$ vectors: $\icol{0\\0\\0},\icol{1\\0\\1},\icol{0\\1\\1},\icol{1\\1\\0}$: is this a subspace? Find the basis. Determine if there is a complement space and if it is orthogonal.
+    \item Gramian matrix, relation to least squares
+    \item Definiteness of a matrix
+    \item Metric, norm, induced norm: explain concepts and show an example. Pseudoinverse, alternative pseudo-inverse, relation to least squares
+    \item Euclidian norm and matrix norm. Weighted matrix norm and iterative algorithm to calculate any p-norm from the p=2 matrix norm.
+    \item Metric, norm: differences, similarities. Examples for metrics, norms and induced norms. Is a metric always a norm? 
+    \item Properties of eigenvalues and eigenvectors of unitary and hermitian matrices. Show why eigenvalues of hermitian matrices and real-valued.
+    \item Calculate/show column-space/row-space of a given matrix, as well as left and right null-space.
+    \item Pseudoinverse: which pseudoinverses do you know? How are they used in least squares? When does a pseudo-inverse exist? (determinant, eigenvalues, singular values)
+    \item Name and explain 3 least squares applications
+    \item Projection theorem $P=P^2$
+    \item Linear dependence and independence
+    \item Cauchy-Schwarz inequality + 2 examples
+    \item Rayleigh-Quotient-problems $min(\frac{x^HAA^Hx}{x^Hx})$ and $min(\frac{x^HAA^Hx}{x^HBB^Hx})$
+    \item Bessel inequality. Parseval's theorem. Why is a complete basis needed? Show using counterexample.
+    \item Eigenfilter
+    \item Singular value decomposition: general properties, what are the matrices composed of, what are their dimensions? What are singular values? Which norms  use the singular values? 
+    \item Subspace-techniques: PhD, MUSIC, ESPRIT. Show principles. What are you trying to achieve? What is given? Why is Pisarenko's equation so hard to solve?
+    \item Explain subspace-techniques and guiding principles, how are they used in UMTS? Orthogonal basis for ${\rm I\!R}^4$ without using zeros. 
+    \item Subspace, orthogonal subspace, orthogonal complement, relation to least squares approximation
+    \item Explain Parseval and Bessel inequality. When is it complete/incomplete? Example: no way to display $cos(t)$ using $sin(t)$
+    \item Fast Fourier Transform: What is it? How is it used?
+    \item Blind equalizer
+    \item Kronecker product: show properties, example problem
+    \item Kronecker product: Given a separable 4x4 matrix, what are the eigenvalues and eigenvectors?
+    
+\end{enumerate}
+
+
+\end{document}
